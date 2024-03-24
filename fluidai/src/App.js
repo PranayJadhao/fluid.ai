@@ -16,6 +16,7 @@ function App() {
           }&apikey=bbe6805d`
         );
         var data = await res.json();
+        console.log(data);
         setMovies(data.Search);
       } catch (err) {
         console.log(err);

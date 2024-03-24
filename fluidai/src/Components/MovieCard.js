@@ -35,7 +35,7 @@ const MovieCard = ({ prop }) => {
         objectFit="cover"
         src={prop.Poster}
         alt="Poster Not Found"
-        mx="auto" // Center align the image
+        mx="auto"
         mb={{ base: 4, md: 0 }}
         cursor="pointer"
         onClick={onOpen}
@@ -44,9 +44,7 @@ const MovieCard = ({ prop }) => {
         <Text fontSize="lg" fontWeight="bold" mb={2}>
           {prop.Title}
         </Text>
-        <Text fontSize="md" mb={2}>
-          <b>Director:</b> {prop.Director}
-        </Text>
+
         <Text fontSize="md" mb={2}>
           <b>Year:</b> {prop.Year}
         </Text>
@@ -65,9 +63,7 @@ const MovieCard = ({ prop }) => {
                 mb={4}
                 mx="auto" // Center align the image
               />
-              <Text fontSize="lg" fontWeight="bold" mb={2}>
-                <b>Director:</b> {prop.Director}
-              </Text>
+
               <Text fontSize="lg" fontWeight="bold" mb={2}>
                 <b>Type:</b> {prop.Type}
               </Text>
